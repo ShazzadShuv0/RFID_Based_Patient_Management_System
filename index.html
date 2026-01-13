@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID BASED PATIENT MONITORING SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body class="light-mode">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-bolt"></i>
+                <span>RFID BASED PATIENT MONITORING SYSTEM </span>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#introduction" class="nav-link">Introduction</a>
+                <a href="#scope" class="nav-link">Scope</a>
+                <a href="#methodology" class="nav-link">Methodology</a>
+                <a href="#circuit" class="nav-link">Circuit</a>
+                 <a href="#code" class="nav-link">Code</a>
+                <!--  <a href="#calculations" class="nav-link">Calculations</a>  -->
+                <a href="#demo" class="nav-link">Demo</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="animated-background">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">Academic Project</div>
+                    <h1 class="hero-title">RFID BASED PATIENT MONITORING SYSTEM</h1>
+                    <p class="hero-subtitle">To improve treatment accuracy, operational efficiency and record security which will ultimately contribute to safer and smarter healthcare management across Bangladeshi hospitals</p>
+
+                    <div class="hero-actions">
+                        <a href="#scope" class="btn btn-primary">
+                            <span>View Project Scope</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Watch Demo Video</span>
+                        </a>
+                    </div>
+
+                    <!-- <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Efficiency</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Monitoring</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">IoT</span>
+                            <span class="stat-label">Integrated</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <a href="#introduction" class="scroll-down">
+                <div class="scroll-down-icon"></div>
+            </a>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="section intro-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Project Introduction</h2>
+                    <p class="section-subtitle">An overview of our innovative hospital monitoring system</p>
+                </div>
+
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p class="reveal-text">The <strong>RFID BASED PATIENT MONITORING SYSTEM </strong> presents the design, simulation and implementation of a hand held RFID-based patient monitoring system. In many hospitals across Bangladesh, patient management still relies on handwritten records and manual data entry which of course leads to frequent errors and inefficiencies in treatment.</p>
+
+                        <p class="reveal-text">A study conducted in private hospitals in Bogra revealed an average of 3.46 prescription errors per patient including illegible handwriting, missing dosage details and serious drug interactions. And these problems increased treatment costs, extended hospital stays as well as sometimes becoming life threatening outcomes. These issues highlight the urgent need for an automated system that ensures accurate and secure handling of patient information.</p>
+
+                        <p class="reveal-text">The RFID Based Patient Monitoring  system addresses this problem by using RFID tags to uniquely identify each patient and provide doctors with instant access to medical history, prescriptions and test results. This system will reduce human error, enhance co-ordination between doctor, hospital staff and enable continuous patient monitoring.</p>
+
+                        <p class="reveal-text">By integrating all patient data into a central and accessible database, this project aims to improve treatment accuracy, operational efficiency and record security which will ultimately contribute to safer and smarter healthcare management across Bangladeshi hospitals.</p>
+
+
+                        <div class="intro-features reveal-text">
+                            <div class="feature">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <span>Power Supply & Distribution unit</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Doctor's Handheld Unit (DHU)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Doctor’s Monitoring and Control Panel </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="intro-visual reveal-text">
+                        <div class="visual-card">
+                            <div class="visual-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Sustainable Solution</h3>
+                            <p>RFID-Based Patient Management System that automates patient identification and record management in hospitals, ensuring faster and efficient healthcare service delivery in Bangladesh. The system aims to replace manual record keeping with a secure, integrated digital solution that minimizes human error and improves co-ordination among medical staff.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scope Section -->
+        <section id="scope" class="section scope-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Project Scope</h2>
+                    <p class="section-subtitle">System specifications define the functional, electrical and performance requirements that the RFID-Based Patient Monitoring System must satisfy to ensure reliable, safe and efficient operation in a hospital environment.
+</p>
+                </div>
+
+                <div class="scope-grid">
+                    <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                         <h3>Functional Specifications</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>Uniquely identify patients using passive 125 kHz RFID tags.</li>
+                            <li>Retrieve and display patient medical information through a Doctor’s Handheld Unit (DHU).</li>
+                            <li> Allow authorized updates to patient data.</li>
+                            <li> Operate in both online (cloud-connected) and offline modes.</li>
+                            <li> Ensure persistent storage of patient records after power loss.</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-power-off"></i>
+                        </div>
+                        <h3>Electrical and Power Specifications</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>Power Source: Three 18650 Li-ion batteries</li>
+                            <li>Charging Mode: 1S3P (parallel)</li>
+                            <li>Service Mode: 3S1P (series) </li>
+                            <li>Nominal Output Voltage: 5 V DC </li>
+                            <li>Maximum Load Current: ~732 mA </li>
+                            <li>Voltage Regulation: LM2596 buck converter (≈85% efficiency) </li>
+                            <li>Total Energy Capacity: 10.545 Wh</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-hard-drive"></i>
+                        </div>
+                        <h3>Hardware Specifications</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>Microcontroller: ESP32 DevKit V1 (3.3 V logic, dual-core, Wi-Fi enabled)</li>
+                             <li>RFID Module: RDM6300 (125 kHz, UART interface)</li>
+                            <li>Display: SPI-based TFT LCD (240 × 320 resolution)</li>
+                            <!-- <li>Predictive Modeling</li> -->
+                        </ul>
+                    </div>
+
+                     <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Communication and Data Specifications</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>RFID Communication: UART (9600 baud)</li>
+                            <li>Display Interface: SPI</li>
+                            <li>Cloud Communication: Wi-Fi using Blynk IoT platform</li>
+                            <li>Data Storage: JSON-based files stored in ESP32 flash memory using LittleFS</li>
+                            <!-- <li>Push Buttons: Multiple tactile push buttons for external interrupt (INT0) triggering emergency/VIP mode and counter for pedestrian pass. </li>
+                            <li>DIP Switches: 4 DIP switches are used to manually control the traffic flow of any desired road.</li>
+                            <li>Breadboard & Jumper Wires</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Performance Specifications</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>RFID detection time: &lt; 1 second </li>
+                            <li>Estimated continuous runtime: ~2.45 hours (worst-case load) </li>
+                            <li>GUI response: Real-time and lag-free</li>
+                            <li>Data retention: Non-volatile storage</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <h3>PCB and Mechanical Specifications</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>Subsystem-01 (Power Supply and Distribution Unit): 2500 × 2700 mil</li>
+                            <li>Subsystem-02 (Doctor’s Handheld Unit): 2500 × 3745 mil</li>
+                            <li>Overall hardware dimensions :</li>
+                            <li>Height: 2 inches</li>
+                            <li>Length: 6.5 inches</li>
+                            <li>Width: 4.5 inches</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="scope" class="section scope-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Apparatus</h2>
+                    <p class="section-subtitle"> </p>
+                </div>
+
+                <div class="scope-grid">
+                    <div class="scope-card">
+                        <div class="scope-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                         <h3>HARDWARE COMPONENTS:</h3>
+                        <p></p>
+                        <ul class="scope-list">
+                            <li>Li ion Battery - 18650</li>
+                            <li>TP4056 Battery Charging Module</li>
+                            <li>Battery Cell Holder</li>
+                            <li>LM2596-buck converter</li>
+                            <li>Capacitors</li>
+                            <li>Dip Switch</li>
+                            <li>Rocket Switch</li>
+                            <li>ESP32 Microcontroller</li>
+                            <li>RFID Module UART RDM6300 (125 KHz)</li>
+                            <li>RFID Tag</li>
+                            <li>I2C display driver module</li>
+                            <li>Wire Set</li>
+                            <li>TFT Touchscreen Display</li>
+                            <li>PVC board</li>
+                            <li>Glue gun</li>
+                            <li>Glue stick</li>
+                            <li>Soldering iron</li>
+                            <li>Soldering wire</li>
+                            <li>Solder Flux Rojon</li>
+                            <li>Push button</li>
+                            <li>Header pin</li>
+                            <li>Veroboard</li>
+                            <!-- <li></li>
+                            <li></li>
+                            <li></li> -->
+
+                        </ul>
+                        <h3>SOFTWARE COMPONENTS:</h3>
+                        <ul class="scope-list">
+                            <li>Blynk</li>
+                            <li>Proteus</li>
+                            <li>Arduino IDE</li>
+                            <!-- <li>LM2596-buck converter</li>
+                            <li>Capacitors</li>
+                            <li>Dip Switch</li>
+                            <li>Rocket Switch</li>
+                            <li>ESP32 Microcontroller</li>
+                            <li>RFID Module UART RDM6300 (125 KHz)</li>
+                            <li>RFID Tag</li>
+                            <li>I2C display driver module</li>
+                            <li>Wire Set</li>
+                            <li>TFT Touchscreen Display</li>
+                            <li>PVC board</li>
+                            <li>Glue gun</li>
+                            <li>Glue stick</li>
+                            <li>Soldering iron</li>
+                            <li>Soldering wire</li>
+                            <li>Solder Flux Rojon</li>
+                            <li>Push button</li>
+                            <li>Header pin</li>
+                            <li>Veroboard</li>
+                            <li></li>
+                            <li></li>
+                            <li></li> -->
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section id="methodology" class="section methodology-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Methodology</h2>
+                    <p class="section-subtitle">When the Doctor’s Handheld unit (DHU) touches the RFID tag attached to a patient’s bed, the RFID system reads the bed number and sends it to the cloud. Using this bed number, the cloud system identifies the patient assigned to that bed and retrieves the patient’s medical history and test reports. This information is then displayed on a screen for the doctor to review. Based on these details, the doctor prescribes the required medicines or treatment, and the new prescription and updates are saved back to the cloud for future use.</p>
+                </div>
+
+                <div class="methodology-flow">
+                    <div class="flow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Requirement Analysis</h3>
+                            <p>Identify user needs, technical specifications and system constraints through  research.</p>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>System Design</h3>
+                            <p>Create 3 different design approach, architecture diagrams, circuit schematics and code for the complete system.</p>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Hardware Implementation</h3>
+                            <p>Assemble and test the whole system with all LEDs, microcontroller and other peripherals.</p>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Software Development</h3>
+                            <p>Code for smooth transition and backend for processing.</p>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Integration & Testing</h3>
+                            <p>Combine hardware and software components, perform unit and integration testing, validate system performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>Deployment & Evaluation</h3>
+                            <p>Deploy pilot system, collect teacher's feedback and evaluate performance against objectives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="methodology-visual">
+                    <div class="timeline">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-marker" style="--position: 0%"></div>
+                        <div class="timeline-marker" style="--position: 20%"></div>
+                        <div class="timeline-marker" style="--position: 40%"></div>
+                        <div class="timeline-marker" style="--position: 60%"></div>
+                        <div class="timeline-marker" style="--position: 80%"></div>
+                        <div class="timeline-marker" style="--position: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Circuit Diagram Section -->
+        <section id="circuit" class="section circuit-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Circuit Diagram</h2>
+                    <p class="section-subtitle">Schematic representation of the System</p>
+                </div>
+
+                <div class="circuit-content">
+                    <!-- <div class="circuit-explanation">
+                        <h3>System Architecture</h3>
+                        <p>The circuit consists of a ATmega32 microcontroller that reads input data from push buttons and opearte the whole system sequentially. </p>
+
+                        <div class="circuit-specs">
+                            <div class="spec-item">
+                                <h4>Key Components</h4>
+                                <ul>
+                                    <li>ATmega32</li>
+                                    <li>Traffic Light Module</li>
+                                    <li>Push Buttons</li>
+                                    <li>7 segment Display</li>
+                                    <li>DIP Switches</li>
+                                </ul>
+                            </div>
+
+                             <div class="spec-item">
+                                <h4>Power Specifications</h4>
+                                <ul>
+                                    <li>Input: 90-240V AC</li>
+                                    <li>Output: 5V DC, 2A</li>
+                                    <li>Operating Frequency: 50/60Hz</li>
+                                    <li>Max Load: 30A, 6600W</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="circuit-diagram">
+                        <div class="diagram-container">
+                            <div class="diagram-image">
+                                <img src="circuit.png" alt="Circuit Diagram of Sub-System-01">
+                                <!-- Circuit diagram representation with CSS -->
+                                <!-- <div class="circuit-board">
+                                    <div class="chip esp32">
+                                        <div class="chip-label">ESP32</div>
+                                    </div>
+                                    <div class="chip acs712">
+                                        <div class="chip-label">ACS712</div>
+                                    </div>
+                                    <div class="chip lcd">
+                                        <div class="chip-label">LCD</div>
+                                    </div>
+                                    <div class="wire wire-1"></div>
+                                    <div class="wire wire-2"></div>
+                                    <div class="wire wire-3"></div>
+                                    <div class="connection connection-1"></div>
+                                    <div class="connection connection-2"></div>
+                                    <div class="connection connection-3"></div>
+                                    <div class="power-source">
+                                        <div class="power-label">AC Mains</div>
+                                    </div>
+                                    <div class="load">
+                                        <div class="load-label">Load</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="diagram-caption">
+                                <p>Fig 1: Circuit diagram of the System</p>
+                            </div>
+                            <button class="btn-zoom" id="zoomCircuit">
+                                <i class="fas fa-expand"></i> Enlarge Diagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Section -->
+        <section id="code" class="section code-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Code Implementation</h2>
+                    <p class="section-subtitle">Key algorithms and firmware code snippets</p>
+                </div>
+
+                <div class="code-tabs">
+                    <div class="tab-buttons">
+                        <!-- <button class="tab-button active" data-tab="firmware">Firmware</button> -->
+                        <button class="tab-button" data-tab="algorithm">Arduino Code</button>
+                        <!-- <button class="tab-button" data-tab="api">API Endpoint</button> -->
+                    </div>
+
+                    <div class="tab-content active" id="firmware">
+                        <div class="code-header">
+                            <span>EEE383_Project.py</span>
+                            <button class="btn-copy" data-target="firmware-code">
+                                <i class="far fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <pre><code id="firmware-code" class="language-cpp">
+
+// Contact to the author for full code.
+</code></pre>
+                    </div>
+
+                    <div class="tab-content" id="algorithm">
+                        <div class="code-header">
+                            <span>power_calculation.py</span>
+                            <button class="btn-copy" data-target="algorithm-code">
+                                <i class="far fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <pre>
+                            <code id="algorithm-code" class="language-python">
+
+                            </code>
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="circuit" class="section circuit-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Budget</h2>
+                    <p class="section-subtitle"></p>
+                </div>
+
+                <div class="circuit-content">
+                    <!-- <div class="circuit-explanation">
+                        <h3>System Architecture</h3>
+                        <p>The circuit consists of a ATmega32 microcontroller that reads input data from push buttons and opearte the whole system sequentially. </p>
+
+                        <div class="circuit-specs">
+                            <div class="spec-item">
+                                <h4>Key Components</h4>
+                                <ul>
+                                    <li>ATmega32</li>
+                                    <li>Traffic Light Module</li>
+                                    <li>Push Buttons</li>
+                                    <li>7 segment Display</li>
+                                    <li>DIP Switches</li>
+                                </ul>
+                            </div>
+
+                             <div class="spec-item">
+                                <h4>Power Specifications</h4>
+                                <ul>
+                                    <li>Input: 90-240V AC</li>
+                                    <li>Output: 5V DC, 2A</li>
+                                    <li>Operating Frequency: 50/60Hz</li>
+                                    <li>Max Load: 30A, 6600W</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="circuit-diagram">
+                        <div class="diagram-container">
+                            <div class="diagram-image">
+                                <img src="Budget_f.jpg" alt="Budget ">
+                                <!-- Circuit diagram representation with CSS -->
+                                <!-- <div class="circuit-board">
+                                    <div class="chip esp32">
+                                        <div class="chip-label">ESP32</div>
+                                    </div>
+                                    <div class="chip acs712">
+                                        <div class="chip-label">ACS712</div>
+                                    </div>
+                                    <div class="chip lcd">
+                                        <div class="chip-label">LCD</div>
+                                    </div>
+                                    <div class="wire wire-1"></div>
+                                    <div class="wire wire-2"></div>
+                                    <div class="wire wire-3"></div>
+                                    <div class="connection connection-1"></div>
+                                    <div class="connection connection-2"></div>
+                                    <div class="connection connection-3"></div>
+                                    <div class="power-source">
+                                        <div class="power-label">AC Mains</div>
+                                    </div>
+                                    <div class="load">
+                                        <div class="load-label">Load</div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="diagram-caption">
+                                <p>Fig 2: Budget Analysis of the System</p>
+                            </div>
+                            <!-- <button class="btn-zoom" id="zoomCircuit">
+                                <i class="fas fa-expand"></i> Enlarge Diagram
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculations Section -->
+        <!-- <section id="calculations" class="section calculations-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Calculations & Analysis</h2>
+                    <p class="section-subtitle">Mathematical foundation and performance metrics</p>
+                </div>
+
+                <div class="calculations-grid">
+                    <div class="calculation-card">
+                        <div class="calculation-header">
+                            <h3>Power Calculation</h3>
+                            <div class="calculation-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <div class="calculation-body">
+                            <p class="calculation-formula">P = V<sub>rms</sub> × I<sub>rms</sub> × cos(φ)</p>
+                            <p>Where:</p>
+                            <ul>
+                                <li>V<sub>rms</sub> = Root Mean Square Voltage</li>
+                                <li>I<sub>rms</sub> = Root Mean Square Current</li>
+                                <li>cos(φ) = Power Factor (0.8 - 0.95 for typical loads)</li>
+                            </ul>
+                            <div class="calculation-example">
+                                <h4>Example Calculation:</h4>
+                                <p>Given: V<sub>rms</sub> = 230V, I<sub>rms</sub> = 5.2A, PF = 0.92</p>
+                                <p>P = 230 × 5.2 × 0.92 = 1,100.32W</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculation-card">
+                        <div class="calculation-header">
+                            <h3>Energy Consumption</h3>
+                            <div class="calculation-icon">
+                                <i class="fas fa-chart-area"></i>
+                            </div>
+                        </div>
+                        <div class="calculation-body">
+                            <p class="calculation-formula">E = ∫ P(t) dt</p>
+                            <p>For discrete measurements:</p>
+                            <p class="calculation-formula">E ≈ Σ (P<sub>i</sub> × Δt<sub>i</sub>)</p>
+                            <div class="calculation-example">
+                                <h4>Daily Energy Calculation:</h4>
+                                <p>Average Power = 850W, Time = 24 hours</p>
+                                <p>E = 850W × 24h = 20,400 Wh = 20.4 kWh</p>
+                                <p>Cost (@ $0.15/kWh) = 20.4 × 0.15 = $3.06</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculation-card">
+                        <div class="calculation-header">
+                            <h3>Sensor Calibration</h3>
+                            <div class="calculation-icon">
+                                <i class="fas fa-ruler-combined"></i>
+                            </div>
+                        </div>
+                        <div class="calculation-body">
+                            <p class="calculation-formula">V<sub>actual</sub> = ADC × (3.3V / 4095) × Calibration Factor</p>
+                            <p>ACS712 Current Sensor Output:</p>
+                            <p class="calculation-formula">I = (V<sub>out</sub> - 1.65V) / Sensitivity</p>
+                            <div class="calculation-example">
+                                <h4>Calibration Example:</h4>
+                                <p>ADC Reading = 2450, Calibration Factor = 0.0049</p>
+                                <p>V = 2450 × (3.3/4095) × 0.0049 × 240 = 230.1V</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calculation-card">
+                        <div class="calculation-header">
+                            <h3>Cost Savings</h3>
+                            <div class="calculation-icon">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                        </div>
+                        <div class="calculation-body">
+                            <p class="calculation-formula">Savings = E<sub>before</sub> × η × Rate × Time</p>
+                            <p>Where η is the efficiency improvement factor (typically 0.15-0.30)</p>
+                            <div class="calculation-example">
+                                <h4>Annual Savings Estimate:</h4>
+                                <p>Monthly Consumption: 600 kWh</p>
+                                <p>Efficiency Improvement: 20% (η = 0.2)</p>
+                                <p>Rate: $0.15/kWh</p>
+                                <p>Annual Savings = 600 × 12 × 0.2 × 0.15 = $216</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-metrics">
+                    <h3>System Performance Metrics</h3>
+                    <div class="metrics-grid">
+                        <div class="metric">
+                            <div class="metric-value">98.2%</div>
+                            <div class="metric-label">Accuracy</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 98.2%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">2.5s</div>
+                            <div class="metric-label">Response Time</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">99.1%</div>
+                            <div class="metric-label">Uptime</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 99.1%"></div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">22%</div>
+                            <div class="metric-label">Avg. Savings</div>
+                            <div class="metric-bar">
+                                <div class="metric-fill" style="width: 22%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Demo Video Section -->
+        <section id="demo" class="section demo-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Demonstration</h2>
+                     <p class="section-subtitle">Click on the image to play demonstration video showing hardware demonstration</p>
+                </div>
+
+                <div class="demo-content">
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <div class="video-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <h3>Four-way Traffic Light Controller Demo</h3>
+                                <p>Click on the image to play demonstration video showing hardware demonstration</p>
+                            </div>
+                            <a href="https://youtube.com/shorts/QzysP-CSsgE?si=0XXAt-6HfDO-sRx0" target="_blank"><img src="Demo_f.jpg" alt="System Demo" class="video-thumbnail"></a>
+                        </div>
+                    </div>
+
+                    <div class="demo-features">
+                        <h3>Demo Highlights</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Hardware demonstration</li>
+                            <li><i class="fas fa-check-circle"></i> Doctor's input & Output</li>
+                            <!-- <li><i class="fas fa-check-circle"></i> Sequential Traffic Flow Control</li>
+                            <li><i class="fas fa-check-circle"></i> Pedestrian Interrupt</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency / Manual Control</li> -->
+
+                        </ul>
+
+                        <!-- <div class="demo-download">
+                            <h4>Project Resources</h4>
+                            <div class="download-buttons">
+                                <a href="#" class="btn-download" id="downloadReport">
+                                    <i class="fas fa-file-pdf"></i> Download Full Report (PDF)
+                                </a>
+                                <a href="#" class="btn-download">
+                                    <i class="fas fa-code"></i> Source Code (ZIP)
+                                </a>
+                                <a href="#" class="btn-download">
+                                    <i class="fas fa-microchip"></i> Circuit Schematics
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+         <section class="section gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Project Gallery</h2>
+                    <p class="section-subtitle">PCB Designs of the System</p>
+                </div>
+
+                <div class="gallery-container">
+                    <div class="gallery-main">
+                        <div class="gallery-image active" data-index="0">
+                            <img src="PCB.jpg" alt="Hardware Prototype">
+                            <div class="image-caption">PCB Gerber files</div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail active" data-index="0">
+                            <img src="PCB.jpg" alt="Hardware Prototype">
+                        </div>
+                        <div class="thumbnail" data-index="1">
+                            <img src="PCB_2.jpg" alt="Circuit Assembly">
+                        </div>
+                        <!-- <div class="thumbnail" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Testing Setup">
+                        </div>
+                        <div class="thumbnail" data-index="3">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Dashboard Interface">
+                        </div>
+                        <div class="thumbnail" data-index="4">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Data Analytics">
+                        </div>
+                    </div> -->
+
+                    <div class="gallery-controls">
+                        <button class="gallery-prev" id="galleryPrev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-next" id="galleryNext">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>RFID BASED PATIENT MONITORING SYSTEM</span>
+                    </div>
+                    <p class="footer-description">To improve treatment accuracy, operational efficiency and record security which will ultimately contribute to safer and smarter healthcare management across Bangladeshi hospitals</p>
+                    <div class="footer-credits">
+                        <p><strong>Project Author:</strong> <b><a href="https://www.facebook.com/shazzadahammed.shuvo" target="_blank">MD Shazzad Ahammed Shuvo</a></b> & <b>9 others</b></p>
+                        <p><strong>University:</strong> Brac University, Department of Electrical & Electronic Engineering</p>
+                        <p><strong>Academic Year:</strong> 2025-2026</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Project Resources</h3>
+                    <ul>
+                        <li><a href="https://drive.google.com/file/d/11yiZeRDNK0gBflSQ1nm-dXtbgYt43t_A/view?usp=sharing"><i class="fas fa-file-pdf"></i> Full Project Report</a></li>
+                        <li><a href="mailto:shazzad.ahammed.shuvo@g.bracu.ac.bd"><i class="fas fa-code"></i> Source Code Repository</a></li>
+                        <li><a href="https://youtube.com/shorts/QzysP-CSsgE?si=-wPH_O0vkQF7MJaa" target="_blank"><i class="fas fa-video"></i> Presentation Video</a></li>
+                        <!-- <li><a href="#"><i class="fas fa-chart-bar"></i> Research Data</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/ShazzadShuv0" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/md-shazzad-ahammed-shuvo-908505274/" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Md-Shuvo-18?ev=hdr_xprf" aria-label="ResearchGate">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                        <!-- <a href="#" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a> -->
+                        <a href="mailto:shazzad.ahammed.shuvo@g.bracu.ac.bd" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="footer-copyright">© 2026 | RFID BASED PATIENT MONITORING SYSTEM. <br>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Circuit Diagram Zoom -->
+    <div class="modal" id="circuitModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <h3>Circuit Diagram - Detailed View</h3>
+                <div class="modal-circuit">
+                    <!-- Expanded circuit diagram would go here -->
+                    <div class="expanded-circuit">
+                        <p>Full schematic diagram showing all connections and components</p>
+                        <!-- <div class="circuit-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #4CAF50;"></div>
+                                <span>Power Lines</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #2196F3;"></div>
+                                <span>Signal Lines</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #FF9800;"></div>
+                                <span>Data Lines</span>
+                            </div>
+                        </div> -->
+                        <img src="Circuit_F.jpg" alt="Expanded Circuit Diagram">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
